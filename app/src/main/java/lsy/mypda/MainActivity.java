@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private WebView webview;
     private ImageView imageView;
-    private TextView tv_refresh,tv_logout;
+    private TextView tv_refresh,tv_setting,tv_logout;
     private ProgressBar progressBar;
     SharedPreferences sharedPreferences;
     String url;
@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
         webview = (WebView) findViewById(R.id.webview);
         imageView = (ImageView) findViewById(R.id.imgbtn_back);
         tv_refresh = (TextView) findViewById(R.id.tv_refresh );
-        tv_logout = (TextView) findViewById(R.id.tv_logout );
+        tv_setting = (TextView) findViewById(R.id.tv_setting );
+        tv_logout = (TextView) findViewById(R.id.tv_logout);
         progressBar = (ProgressBar) findViewById(R.id.pb);
         url=sharedPreferences.getString("lastUrl","https:baidu.com");
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -58,12 +59,18 @@ public class MainActivity extends AppCompatActivity {
                 webview.reload();
             }
         });
-        tv_logout.setOnClickListener(new View.OnClickListener() {
+        tv_setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(MainActivity.this,EditUrlActivity.class);
                 intent.putExtra("currentUrl",url);
                 MainActivity.this.startActivityForResult(intent,1);
+            }
+        });
+        tv_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
         openUrl(url);
