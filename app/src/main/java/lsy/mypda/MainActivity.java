@@ -34,10 +34,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        this.requestWindowFeature(Window.FEATURE_NO_TITLE);//   继承的不是activity,导致隐藏标题栏失效
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
         sharedPreferences= getSharedPreferences("data", Context.MODE_PRIVATE);
         webview = (WebView) findViewById(R.id.webview);
         imageView = (ImageView) findViewById(R.id.imgbtn_back);
@@ -70,7 +71,10 @@ public class MainActivity extends AppCompatActivity {
         tv_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                //webview.goBack();
+                //String LogoutUrl = "http://erp.hkbluelans.com:801/system/index.php/mob/managers/logout";
+                String LogoutUrl = url + "/system/index.php/mob/managers/logout";
+                webview.loadUrl(LogoutUrl);
             }
         });
         openUrl(url);
@@ -110,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void indata(String url) {
-        //String url = "http://192.168.88.64/system/index.php/mob";
+        //String url = "http://192.16m8.88.64/syste/index.php/mob";
         webview.setWebViewClient(new webViewClient());
         webview.setWebChromeClient(new webChromeClient());
         //WebView加载web资源
@@ -141,6 +145,8 @@ public class MainActivity extends AppCompatActivity {
                 //handleMessage(Message msg); // 进行其他处理
             }
         });
+        //  隐藏加载条
+        webview.setWebChromeClient(new webChromeClient());
         webview.getSettings().setJavaScriptEnabled(true);
         webview.loadUrl(url);
     }
