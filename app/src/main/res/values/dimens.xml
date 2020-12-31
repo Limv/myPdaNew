@@ -1,0 +1,245 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="zisize">10sp</dimen>
+    <dimen name="detail_menu_item_height">30dp</dimen>
+    <dimen name="detail_menu_margin_top_up">15dp</dimen>
+    <dimen name="detail_menu_margin_top">15dp</dimen>
+
+    <dimen name="border_thickness">3dp</dimen>
+    <dimen name="corner_thickness">5dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+
+    <dimen name="target_radius">24dp</dimen>
+    <dimen name="snap_radius">3dp</dimen>
+    <dimen name="corner_length">20dp</dimen>
+
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">2dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+
+
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="expand_tab_item_height">45dp</dimen>
+    <dimen name="expand_tab_eara_height">380dp</dimen>
+    <dimen name="head_bar_height">45dp</dimen>
+
+    <dimen name="snappingstepper_width_button">30dp</dimen>
+    <dimen name="snappingstepper_padding_button">10dp</dimen>
+    <dimen name="snappingstepper_textSize">15sp</dimen>
+
+
+
+    <dimen name="toolbar_elevation">8dp</dimen>
+
+    <dimen name="hero_avatar_size">120dp</dimen>
+    <dimen name="hero_avatar_border">3dp</dimen>
+    <dimen name="viewpager_height">240dp</dimen>
+    <dimen name="indicator_size">6dp</dimen>
+    <dimen name="indicator_margin">6dp</dimen>
+
+    <dimen name="load_more_footer_height_classic">60dp</dimen>
+
+    <dimen name="refresh_header_height_twitter">80dp</dimen>
+    <dimen name="load_more_footer_height_twitter">60dp</dimen>
+
+    <!-- google -->
+    <dimen name="refresh_header_height_google">100dp</dimen>
+    <dimen name="refresh_trigger_offset_google">100dp</dimen>
+    <dimen name="refresh_final_offset_google">150dp</dimen>
+    <dimen name="refresh_drawable_size_google">40dp</dimen>
+
+    <dimen name="load_more_footer_height_google">72dp</dimen>
+    <dimen name="load_more_trigger_offset_google">88dp</dimen>
+    <dimen name="load_more_final_offset_google">120dp</dimen>
+    <dimen name="load_more_drawable_size_google">36dp</dimen>
+
+    <!-- yalantis -->
+    <dimen name="refresh_header_height_yalantis">136dp</dimen>
+
+    <!-- jd -->
+    <dimen name="refresh_header_height_jd">100dp</dimen>
+
+    <dimen name="MY_DP_0.5">0.5dp</dimen>
+    <dimen name="MY_DP_1">1dp</dimen>
+    <dimen name="MY_DP_1.5">1.5dp</dimen>
+    <dimen name="MY_DP_2.5">2.5dp</dimen>
+    <dimen name="MY_DP_2">2dp</dimen>
+    <dimen name="MY_DP_3">3dp</dimen>
+    <dimen name="MY_DP_4">4dp</dimen>
+    <dimen name="MY_DP_5">5dp</dimen>
+    <dimen name="MY_DP_5.5">5.5dp</dimen>
+    <dimen name="MY_DP_6">6dp</dimen>
+    <dimen name="MY_DP_7">7dp</dimen>
+    <dimen name="MY_DP_8">8dp</dimen>
+    <dimen name="MY_DP_9">9dp</dimen>
+    <dimen name="MY_DP_10">10dp</dimen>
+    <dimen name="MY_DP_11">11dp</dimen>
+    <dimen name="MY_DP_12">12dp</dimen>
+    <dimen name="MY_DP_13">13dp</dimen>
+    <dimen name="MY_DP_14">14dp</dimen>
+    <dimen name="MY_DP_15">15dp</dimen>
+    <dimen name="MY_DP_16">16dp</dimen>
+    <dimen name="MY_DP_17">17dp</dimen>
+    <dimen name="MY_DP_18">18dp</dimen>
+    <dimen name="MY_DP_19">19dp</dimen>
+    <dimen name="MY_DP_20">20dp</dimen>
+    <dimen name="MY_DP_21">21dp</dimen>
+    <dimen name="MY_DP_22">22dp</dimen>
+    <dimen name="MY_DP_23">23dp</dimen>
+    <dimen name="MY_DP_24">24dp</dimen>
+    <dimen name="MY_DP_25">25dp</dimen>
+    <dimen name="MY_DP_26">26dp</dimen>
+    <dimen name="MY_DP_27">27dp</dimen>
+    <dimen name="MY_DP_28">28dp</dimen>
+    <dimen name="MY_DP_29">29dp</dimen>
+    <dimen name="MY_DP_30">30dp</dimen>
+    <dimen name="MY_DP_31">31dp</dimen>
+    <dimen name="MY_DP_32">32dp</dimen>
+    <dimen name="MY_DP_33">33dp</dimen>
+    <dimen name="MY_DP_34">34dp</dimen>
+    <dimen name="MY_DP_35">35dp</dimen>
+    <dimen name="MY_DP_36">36dp</dimen>
+    <dimen name="MY_DP_37">37dp</dimen>
+    <dimen name="MY_DP_38">38dp</dimen>
+    <dimen name="MY_DP_39">39dp</dimen>
+    <dimen name="MY_DP_40">40dp</dimen>
+    <dimen name="MY_DP_41">41dp</dimen>
+    <dimen name="MY_DP_42">42dp</dimen>
+    <dimen name="MY_DP_43">43dp</dimen>
+    <dimen name="MY_DP_44">44dp</dimen>
+    <dimen name="MY_DP_45">45dp</dimen>
+    <dimen name="MY_DP_46">46dp</dimen>
+    <dimen name="MY_DP_47">47dp</dimen>
+    <dimen name="MY_DP_48">48dp</dimen>
+    <dimen name="MY_DP_49">49dp</dimen>
+    <dimen name="MY_DP_50">50dp</dimen>
+    <dimen name="MY_DP_51">51dp</dimen>
+    <dimen name="MY_DP_52">52dp</dimen>
+    <dimen name="MY_DP_53">53dp</dimen>
+    <dimen name="MY_DP_54">54dp</dimen>
+    <dimen name="MY_DP_55">55dp</dimen>
+    <dimen name="MY_DP_56">56dp</dimen>
+    <dimen name="MY_DP_57">57dp</dimen>
+    <dimen name="MY_DP_58">58dp</dimen>
+    <dimen name="MY_DP_59">59dp</dimen>
+    <dimen name="MY_DP_60">60dp</dimen>
+    <dimen name="MY_DP_61">61dp</dimen>
+    <dimen name="MY_DP_62">62dp</dimen>
+    <dimen name="MY_DP_63">63dp</dimen>
+    <dimen name="MY_DP_64">64dp</dimen>
+    <dimen name="MY_DP_65">65dp</dimen>
+    <dimen name="MY_DP_66">66dp</dimen>
+    <dimen name="MY_DP_67">67dp</dimen>
+    <dimen name="MY_DP_68">68dp</dimen>
+    <dimen name="MY_DP_69">69dp</dimen>
+    <dimen name="MY_DP_70">70dp</dimen>
+    <dimen name="MY_DP_71">71dp</dimen>
+    <dimen name="MY_DP_72">72dp</dimen>
+    <dimen name="MY_DP_73">73dp</dimen>
+    <dimen name="MY_DP_74">74dp</dimen>
+    <dimen name="MY_DP_75">75dp</dimen>
+    <dimen name="MY_DP_76">76dp</dimen>
+    <dimen name="MY_DP_77">77dp</dimen>
+    <dimen name="MY_DP_78">78dp</dimen>
+    <dimen name="MY_DP_79">79dp</dimen>
+    <dimen name="MY_DP_80">80dp</dimen>
+    <dimen name="MY_DP_81">81dp</dimen>
+    <dimen name="MY_DP_82">82dp</dimen>
+    <dimen name="MY_DP_83">83dp</dimen>
+    <dimen name="MY_DP_84">84dp</dimen>
+    <dimen name="MY_DP_85">85dp</dimen>
+    <dimen name="MY_DP_86">86dp</dimen>
+    <dimen name="MY_DP_87">87dp</dimen>
+    <dimen name="MY_DP_88">88dp</dimen>
+    <dimen name="MY_DP_89">89dp</dimen>
+    <dimen name="MY_DP_90">90dp</dimen>
+    <dimen name="MY_DP_91">91dp</dimen>
+    <dimen name="MY_DP_92">92dp</dimen>
+    <dimen name="MY_DP_93">93dp</dimen>
+    <dimen name="MY_DP_94">94dp</dimen>
+    <dimen name="MY_DP_95">95dp</dimen>
+    <dimen name="MY_DP_96">96dp</dimen>
+    <dimen name="MY_DP_97">97dp</dimen>
+    <dimen name="MY_DP_98">98dp</dimen>
+    <dimen name="MY_DP_99">99dp</dimen>
+    <dimen name="MY_DP_100">100dp</dimen>
+    <dimen name="MY_DP_110">110dp</dimen>
+    <dimen name="MY_DP_120">120dp</dimen>
+    <dimen name="MY_DP_130">130dp</dimen>
+    <dimen name="MY_DP_150">150dp</dimen>
+    <dimen name="MY_FDP_100">-100dp</dimen>
+    <dimen name="MY_DP_450">450dp</dimen>
+    <dimen name="MY_DP_200">200dp</dimen>
+    <dimen name="MY_DP_268">268dp</dimen>
+    <dimen name="MY_DP_148">148dp</dimen>
+    <dimen name="MY_DP_168">168dp</dimen>
+    <dimen name="MY_DP_260">260dp</dimen>
+    <dimen name="MY_DP_129">129dp</dimen>
+    <dimen name="MY_DP_250">250dp</dimen>
+    <dimen name="MY_DP_300">300dp</dimen>
+    <dimen name="MY_DP_350">350dp</dimen>
+    <dimen name="MY_DP_160">160dp</dimen>
+    <dimen name="MY_DP_165">165dp</dimen>
+    <dimen name="MY_DP_170">170dp</dimen>
+    <dimen name="MY_DP_180">180dp</dimen>
+    <dimen name="MY_DP_190">190dp</dimen>
+    <dimen name="MY_DP_111">111dp</dimen>
+    <dimen name="MY_DP_112">112dp</dimen>
+
+    <dimen name="MY_DP_113.5">113.5dp</dimen>
+    <dimen name="MY_DP_114">114dp</dimen>
+    <dimen name="MY_DP_115">115dp</dimen>
+    <dimen name="MY_DP_116">116dp</dimen>
+    <dimen name="MY_DP_117">117dp</dimen>
+    <dimen name="MY_DP_118">118dp</dimen>
+    <dimen name="MY_DP_119">119dp</dimen>
+
+
+    <!-- 字体 -->
+    <dimen name="MY_SP_5">5sp</dimen>
+    <dimen name="MY_SP_6">6sp</dimen>
+    <dimen name="MY_SP_7">7sp</dimen>
+    <dimen name="MY_SP_8">8sp</dimen>
+    <dimen name="MY_SP_9">9sp</dimen>
+    <dimen name="MY_SP_10">10sp</dimen>
+    <dimen name="MY_SP_11">11sp</dimen>
+    <dimen name="MY_SP_12">12sp</dimen>
+    <dimen name="MY_SP_13">13sp</dimen>
+    <dimen name="MY_SP_14">14sp</dimen>
+    <dimen name="MY_SP_15">15sp</dimen>
+    <dimen name="MY_SP_16">16sp</dimen>
+    <dimen name="MY_SP_16_1">15sp</dimen>
+    <dimen name="MY_SP_17">17sp</dimen>
+    <dimen name="MY_SP_18">18sp</dimen>
+    <dimen name="MY_SP_19">19sp</dimen>
+    <dimen name="MY_SP_20">20sp</dimen>
+    <dimen name="MY_SP_21">21sp</dimen>
+    <dimen name="MY_SP_22">22sp</dimen>
+    <dimen name="MY_SP_23">23sp</dimen>
+    <dimen name="MY_SP_24">24sp</dimen>
+    <dimen name="MY_SP_25">25sp</dimen>
+    <dimen name="MY_SP_26">26sp</dimen>
+    <dimen name="MY_SP_27">27sp</dimen>
+    <dimen name="MY_SP_28">28sp</dimen>
+    <dimen name="MY_SP_29">29sp</dimen>
+    <dimen name="MY_SP_30">30sp</dimen>
+</resources>
