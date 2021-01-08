@@ -13,6 +13,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.webkit.CookieManager;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     SharedPreferences sharedPreferences;
     String url;
+    String url_slice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,12 +43,15 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         sharedPreferences= getSharedPreferences("data", Context.MODE_PRIVATE);
         webview = (WebView) findViewById(R.id.webview);
+        //  开启JavaScript脚本支持
+        webview.getSettings().setJavaScriptEnabled(true);
         imageView = (ImageView) findViewById(R.id.imgbtn_back);
         tv_refresh = (TextView) findViewById(R.id.tv_refresh );
         tv_setting = (TextView) findViewById(R.id.tv_setting );
         tv_logout = (TextView) findViewById(R.id.tv_logout);
         progressBar = (ProgressBar) findViewById(R.id.pb);
-        url=sharedPreferences.getString("lastUrl","https:baidu.com");
+        url=sharedPreferences.getString("lastUrl","gl-test");
+        url_slice = "http://bds." + url + ".com/mobile/login/index";
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,11 +78,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //webview.goBack();
                 //String LogoutUrl = "http://erp.hkbluelans.com:801/system/index.php/mob/managers/logout";
-                String LogoutUrl = url + "/system/index.php/mob/managers/logout";
-                webview.loadUrl(LogoutUrl);
+//                String LogoutUrl = url + "/system/index.php/mob/managers/logout";
+                url_slice = "http://bds." + url + ".com/mobile/login/index";
+                //  清除缓存cookie
+                webview.clearCache(true);
+                CookieManager.getInstance().removeAllCookie();
+                //  开启脚本支持
+                webview.getSettings().setJavaScriptEnabled(true);
+                webview.loadUrl(url_slice);
             }
         });
-        openUrl(url);
+        openUrl(url_slice);
     }
 
     private void saveUrl(){
@@ -91,13 +102,14 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1 && resultCode == 3) {
             String tempUrl = data.getStringExtra("url");
+            url_slice = "http://bds." + tempUrl + ".com/mobile/login/index";
             System.out.println("tempUrl="+tempUrl);
-            if(Util.isVaildUrl(tempUrl)){
+//            if(Util.isVaildUrl(tempUrl)){
                 url=tempUrl;
                 saveUrl();
 
-                openUrl(url);
-            }
+                openUrl(url_slice);
+//            }
 
         }
 
@@ -117,6 +129,8 @@ public class MainActivity extends AppCompatActivity {
         //String url = "http://192.16m8.88.64/syste/index.php/mob";
         webview.setWebViewClient(new webViewClient());
         webview.setWebChromeClient(new webChromeClient());
+        //  开启脚本支持
+        webview.getSettings().setJavaScriptEnabled(true);
         //WebView加载web资源
         webview.loadUrl(url);
         //设置Web视图

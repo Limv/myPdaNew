@@ -37,10 +37,10 @@ public class EditUrlActivity extends AppCompatActivity implements View.OnClickLi
         switch (v.getId()){
             case R.id.bt_sure:
                 String url= et_url.getText().toString().trim();
-                if(!Util.isVaildUrl(url)){
-                    Toast.makeText(this,"请输入有效的网址!",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//                if(!Util.isVaildUrl(url)){
+//                    Toast.makeText(this,"请输入有效的网址!",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
                 Intent i = new Intent();
                 i.putExtra("url", et_url.getText().toString().trim());
                 setResult(3, i);
