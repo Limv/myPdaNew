@@ -83,8 +83,6 @@ public class MainActivity extends AppCompatActivity {
                 //  清除缓存cookie
                 webview.clearCache(true);
                 CookieManager.getInstance().removeAllCookie();
-                //  开启脚本支持
-                webview.getSettings().setJavaScriptEnabled(true);
                 webview.loadUrl(url_slice);
             }
         });
@@ -129,8 +127,6 @@ public class MainActivity extends AppCompatActivity {
         //String url = "http://192.16m8.88.64/syste/index.php/mob";
         webview.setWebViewClient(new webViewClient());
         webview.setWebChromeClient(new webChromeClient());
-        //  开启脚本支持
-        webview.getSettings().setJavaScriptEnabled(true);
         //WebView加载web资源
         webview.loadUrl(url);
         //设置Web视图
@@ -146,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
                 //handleMessage(Message msg); // 进行其他处理
             }
         });
-        webview.getSettings().setJavaScriptEnabled(true);
         webview.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         webview.loadUrl(url);
     }
@@ -161,7 +156,6 @@ public class MainActivity extends AppCompatActivity {
         });
         //  隐藏加载条
         webview.setWebChromeClient(new webChromeClient());
-        webview.getSettings().setJavaScriptEnabled(true);
         webview.loadUrl(url);
     }
 
